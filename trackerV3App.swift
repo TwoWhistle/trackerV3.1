@@ -56,6 +56,10 @@ struct trackerV3App: App {
                     .tabItem {
                         Label("Data Logging", systemImage: "square.and.pencil")
                     }
+                DebugLogView(bleManager: bleManager)
+                    .tabItem {
+                        Label("Debug Log", systemImage: "terminal")
+                    }
             }
         }
         .modelContainer(sharedModelContainer)
